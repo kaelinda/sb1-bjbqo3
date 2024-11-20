@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>快乐泡泡龙</title>
+    <style>
+      body {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: #1a1a1a;
+        font-family: Arial, sans-serif;
+      }
+      #gameContainer {
+        position: relative;
+      }
+      #gameCanvas {
+        border: 2px solid #333;
+        background: #000;
+      }
+      #score {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        color: white;
+        font-size: 20px;
+      }
+      #level {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        color: white;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="gameContainer">
+      <canvas id="gameCanvas"></canvas>
+      <div id="score">分数: 0</div>
+      <div id="level">关卡: 1</div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
